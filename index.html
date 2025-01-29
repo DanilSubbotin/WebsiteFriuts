@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>"Фрукты жи есть!": Экзотические фрукты</title>
+	<title>"Fruitopia": Экзотические фрукты</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" type="image/png" href="img\dragonfruit.png">
 	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
@@ -14,7 +14,7 @@
 <body>
 	<div class="container">
 		<div class="title">
-			<img class="dragonfruitphoto" src="img\logo.png">
+			<img class="dragonfruitphoto" src="img\sitelogo.png">
 			<div class="sections">
 				<ul>
 					<li><a href="#fruits">Выбрать фрукты</a></li>
@@ -181,7 +181,7 @@
 			<img class="phone" src="img\phone.jpg">
 		</div>
 		<div class="link"> <a href="#fruits"><button class="selection_fruits2">ВЫБРАТЬ ФРУКТЫ</button></a> </div>
-		<div class="separation" >
+		<div class="separation">
 			<div class="line"></div>
 		</div>
 		<h1>Отзывы наших клиентов</h1>
@@ -210,7 +210,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="more_reviews">ЕЩЕ БОЛЬШЕ ОТЗЫВОВ В НАШИХ СООБЩЕСТВАХ:</div>
 		<div class="community_links">
 			<div class="vk_instagram">
@@ -249,16 +249,16 @@
 		const pupit = document.querySelector('.pupit');
 
 		write_review.addEventListener('click', () => {
-            pupit.showModal()
+			pupit.showModal()
 		})
 
 		closeModal.addEventListener('click', () => {
-            pupit.close()
+			pupit.close()
 		})
 
 		pupit.addEventListener('click', (e) => {
-            console.log(e.target)
-			if(e.target === pupit) pupit.close()
+			console.log(e.target)
+			if (e.target === pupit) pupit.close()
 		})
 	</script>
 </body>
