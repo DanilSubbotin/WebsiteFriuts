@@ -42,6 +42,11 @@
 				привозим специально для вас из разных уголков мира!</div>
 			<a href="#fruits"><button class="selection_fruits">ВЫБРАТЬ ФРУКТЫ</button></a>
 		</div>
+
+
+
+
+
 		<div class="fruits" id="fruits">
 			<h1>Выбор готового набора</h1>
 			<h3>Готовый набор – идеальный вариант для подарка или первого знакомства с экзотическими фруктами. <br>
@@ -53,8 +58,21 @@
 						<div class="product_description">Большая коробка</div> 16 видов фруктов, ≈ 6,5кг.<div
 							class="price"> 9490 руб.</div>
 						<div class="set">
-							<button class="set_selection">ВЫБРАТЬ НАБОР</button> <button class="set_composition">Состав
-								набора</button>
+							<button class="set_selection">ВЫБРАТЬ НАБОР</button> 
+							<button class="set_composition">Состав набора</button>
+							<dialog class="pupit_compound">
+								<img src="img/bigbox2.jpg">
+								<div class="pupit_compound_description">
+									<div class="title_pupit_compound">Большая коробка</div>
+									<div class="title_price_compound">16 видов фруктов, ≈ 6,5 кг.</div>
+									<div class="title_pupit_compound_more">Тропический молодой кокос, 2 больших вкусных манго разных сортов, плод страсти – маракуйя 2 <br>
+									шт, ананас мини Пхукет, сладкие рамбутаны (250г), гроздь лонгана (250г), зеленая гуава, <br>
+									заманчивый салак (200г), 2 неповторимых фрукта дракона (питахайя) разных сортов, лакомый <br>
+									тамаринд (250г), большая спелая папайя, 2 пикантных мангостина, освежающий кумкват (100г) и 2 <br>
+									солнечных гранадиллы.</div>
+								<button class="close_composition" id="close_composition">ЗАКАЗАТЬ НАБОР</button>
+							    </div>
+							</dialog>
 						</div>
 					</div>
 					<div class="averagebox">
@@ -62,8 +80,20 @@
 						<div class="product_description">Средняя коробка</div> 11 видов фруктов, ≈ 4,5кг.<div
 							class="price"> 6490 руб.</div>
 						<div class="set">
-							<button class="set_selection">ВЫБРАТЬ НАБОР</button> <button class="set_composition">Состав
-								набора</button>
+							<button class="set_selection">ВЫБРАТЬ НАБОР</button> 
+							<button class="set_composition2">Состав набора</button>
+							<dialog class="pupit_compound2">
+								<img src="img/averagebox2.jpg">
+								<div class="pupit_compound_description">
+									<div class="title_pupit_compound">Средняя коробка</div>
+									<div class="title_price_compound">11 видов фруктов, ≈ 4,5 кг.</div>
+									<div class="title_pupit_compound_more">Тропический молодой кокос, большое желтое тайское манго, сладкие рамбутаны (250г), гроздь <br>
+									лонгана (250г), лакомый тамаринд (250г), неповторимый фрукт дракона (питахайя), манящий <br>
+									физалис (100г), большой ананас Пхукет, плод страсти – маракуйя (250г), освежающий кумкват <br>
+									(200г) и солнечная гранадилла.</div>
+								    <button class="close_composition2" id="close_composition2">ЗАКАЗАТЬ НАБОР</button>
+							    </div>
+							</dialog>
 						</div>
 					</div>
 					<div class="smallbox">
@@ -71,8 +101,19 @@
 						<div class="product_description">Маленькая коробка</div> 9 видов фруктов, ≈ 3кг.<div
 							class="price"> 5490 руб.</div>
 						<div class="set">
-							<button class="set_selection">ВЫБРАТЬ НАБОР</button> <button class="set_composition">Состав
-								набора</button>
+							<button class="set_selection">ВЫБРАТЬ НАБОР</button> 
+							<button class="set_composition3">Состав набора</button>
+							<dialog class="pupit_compound3">
+								<img src="img/smallbox2.jpg">
+								<div class="pupit_compound_description">
+									<div class="title_pupit_compound">Маленькая коробка</div>
+									<div class="title_price_compound">9 видов фруктов, ≈ 3 кг.</div>
+									<div class="title_pupit_compound_more">Тропический молодой кокос, большое желтое тайское манго, неповторимый фрукт дракона <br>
+									(питахайя), гроздь лонгана (250г), сладкие рамбутаны (250г), мини ананас Пхукет, освежающий <br>
+									кумкват (200г), солнечная гранадилла и пикантный мангостин.</div>
+								    <button class="close_composition3" id="close_composition3">ЗАКАЗАТЬ НАБОР</button>
+							    </div>
+							</dialog>
 						</div>
 					</div>
 				</div>
@@ -109,6 +150,11 @@
 				<a href="catalog.html"><button class="catalog_link">ПЕРЕЙТИ К КАТАЛОГУ</button></a>
 			</div>
 		</div>
+
+
+
+
+
 		<div class="how_it_works" id="how_it_works">
 			<div class="words3">Как это работает?</div>
 			<div class="photos">
@@ -261,6 +307,60 @@
 			if (e.target === pupit) pupit.close()
 		})
 	</script>
+	<script>
+		const set_composition = document.querySelector('.set_composition');
+		const close_composition = document.querySelector('.close_composition');
+		const pupit_compound = document.querySelector('.pupit_compound');
+
+		set_composition.addEventListener('click', () => {
+			pupit_compound.showModal()
+		})
+
+		close_composition.addEventListener('click', () => {
+			pupit_compound.close()
+		})
+
+		pupit_compound.addEventListener('click', (e) => {
+			console.log(e.target)
+			if (e.target === pupit_compound) pupit_compound.close()
+		})
+	</script>
+		<script>
+			const set_composition2 = document.querySelector('.set_composition2');
+			const close_composition2 = document.querySelector('.close_composition2');
+			const pupit_compound2 = document.querySelector('.pupit_compound2');
+	
+			set_composition2.addEventListener('click', () => {
+				pupit_compound2.showModal()
+			})
+	
+			close_composition2.addEventListener('click', () => {
+				pupit_compound2.close()
+			})
+	
+			pupit_compound2.addEventListener('click', (e) => {
+				console.log(e.target)
+				if (e.target === pupit_compound2) pupit_compound2.close()
+			})
+		</script>
+		<script>
+			const set_composition3 = document.querySelector('.set_composition3');
+			const close_composition3 = document.querySelector('.close_composition3');
+			const pupit_compound3 = document.querySelector('.pupit_compound3');
+	
+			set_composition3.addEventListener('click', () => {
+				pupit_compound3.showModal()
+			})
+	
+			close_composition3.addEventListener('click', () => {
+				pupit_compound3.close()
+			})
+	
+			pupit_compound3.addEventListener('click', (e) => {
+				console.log(e.target)
+				if (e.target === pupit_compound3) pupit_compound3.close()
+			})
+		</script>
 </body>
 
 </html>

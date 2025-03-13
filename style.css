@@ -20,7 +20,7 @@ body {
 }
 
 .dragonfruitphoto {
-	margin-left: 40px;
+	margin-left: 60px;
 	margin-top: 15px;
 }
 
@@ -650,6 +650,162 @@ input:focus {
 	border: none;
 	margin-top: 30px;
 }
+
+
+.pupit_compound {
+	border: none;
+	padding: 0;
+	height: 900px;
+	
+}
+
+.pupit_compound::backdrop{
+	background-color: #000000;
+	opacity: 0.7;
+}
+
+
+.pupit_compound_description{
+	padding-left: 50px;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+
+.title_pupit_compound{
+	font-size: 33px;
+	font-weight: 600;
+	margin-top: 20px;
+}
+
+
+.title_price_compound{
+	font-weight: 300;
+	font-size: 17px;
+	margin-top: 15px;
+	text-align: start;
+	color: #3b3e42;
+}
+
+
+.title_pupit_compound_more{
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 30px;
+	margin-top: 15px;
+	text-align: start;
+}
+
+
+.close_composition{
+	width: 250px;
+	height: 60px;
+	background: #ff4a4a;
+	color: white;
+	font-weight: 600;
+	font-size: 16px;
+	border-radius: 30px;
+	border: none;
+	margin-top: 20px;
+}
+
+
+.set_composition2 {
+	width: 135px;
+	height: 40px;
+	border-radius: 30px;
+	background: white;
+	border-color: black;
+	font-family: Jost;
+	font-weight: 600;
+
+	@media (max-width: 430px) {
+		margin-top: 10px;
+	}
+}
+
+
+.pupit_compound2 {
+	border: none;
+	padding: 0;
+	height: 900px;
+}
+
+
+.pupit_compound2::backdrop{
+	background-color: #000000;
+	opacity: 0.7;
+}
+
+
+.close_composition2{
+	width: 250px;
+	height: 60px;
+	background: #ff4a4a;
+	color: white;
+	font-weight: 600;
+	font-size: 16px;
+	border-radius: 30px;
+	border: none;
+	margin-top: 35px;
+}
+
+
+
+.set_composition3 {
+	width: 135px;
+	height: 40px;
+	border-radius: 30px;
+	background: white;
+	border-color: black;
+	font-family: Jost;
+	font-weight: 600;
+
+	@media (max-width: 430px) {
+		margin-top: 10px;
+	}
+}
+
+
+.pupit_compound3 {
+	border: none;
+	padding: 0;
+	height: 900px;
+}
+
+
+.pupit_compound3::backdrop{
+	background-color: #000000;
+	opacity: 0.7;
+}
+
+
+.close_composition3{
+	width: 250px;
+	height: 60px;
+	background: #ff4a4a;
+	color: white;
+	font-weight: 600;
+	font-size: 16px;
+	border-radius: 30px;
+	border: none;
+	margin-top: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
